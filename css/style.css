@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 5px;
+}
+
+nav{
+    width: 95%;
+    background-color: aqua;
+    margin: 3px auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+.title{
+    text-decoration: none;
+    color: black;
+}
+
+nav h1{
+    width: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    padding: 20px;
+    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 200x;
+    font-weight: bold;
+    padding: 15px;
+}
+
+nav ul a:hover{
+    background-color: black;
+    color: aqua;
+    border-radius: 10px;
+}
+
+main{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+main h1{
+    padding: 10px;
+}
+
+fieldset{
+    margin: 20px;
+}
+
+.inscripcion{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.multimediaImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    border: rgb(0, 0, 0) 2px solid;
+    margin: 5px;
+}
+
+footer{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(221, 220, 220);
+}
+
+footer h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+footer li{
+    font-size: 20px;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.imgRedes{
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+}
