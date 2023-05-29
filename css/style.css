@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask4537%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient4538)'%3e%3c/rect%3e%3cpath d='M1440 0L1142.85 0L1440 216.9z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1142.85 0L1440 216.9L1440 284.26L536.0099999999999 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M536.01 0L1440 284.26L1440 456.11L534.13 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M534.13 0L1440 456.11L1440 500.83000000000004L197.39999999999998 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 560L221.23 560L0 408.53z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 408.53L221.23 560L290.21999999999997 560L0 209.82999999999998z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 209.83000000000004L290.21999999999997 560L740.01 560L0 189.20000000000005z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 189.20000000000005L740.01 560L850.71 560L0 87.63000000000005z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask4537'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='139.29%25' x2='84.72%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient4538'%3e%3cstop stop-color='rgba(34%2c 33%2c 32%2c 1)' offset='1'%3e%3c/stop%3e%3cstop stop-color='rgba(179%2c 179%2c 179%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
 header{
     position: sticky;
     top: 5px;
@@ -12,7 +19,7 @@ header{
 
 nav{
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(255, 153, 0);
     margin: 3px auto;
     display: flex;
 }
@@ -56,7 +63,7 @@ h1{
 
 .navBar a:hover{
     background-color: black;
-    color: aqua;
+    color: rgb(255, 153, 0);
     border-radius: 10px;
 }
 
@@ -148,10 +155,22 @@ main section h1{
 }
 
 .partido{
-    border: rgb(109, 187, 197) 5px double;
+    border: rgb(255, 153, 0) 5px double;
     margin: 5px;
     display: flex;
     justify-content: center;
+}
+
+.cabezaTabla{
+    background-color: orange;
+}
+
+.columnaTabla{
+    color: white;
+}
+
+.tabla th{
+    color: w;
 }
 
 fieldset{
@@ -183,7 +202,9 @@ footer{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     padding: 20px;
-    background-color: rgb(221, 220, 220);
+    background: linear-gradient(#F7B633, #4E1D1D);
+    color: black;
+    
 }
 
 footer h2{
@@ -194,6 +215,7 @@ footer h2{
 
 footer ul{
     padding: 0%;
+    padding-bottom: 1%;
     margin: 0%;
 }
 
