@@ -7,13 +7,13 @@
 header{
     position: sticky;
     top: 5px;
+    z-index: 1;
 }
 
 nav{
-    width: 95%;
+    width: 100%;
     background-color: aqua;
     margin: 3px auto;
-    border-radius: 10px;
     display: flex;
 }
 
@@ -24,8 +24,11 @@ nav{
 
 nav h1{
     width: 15%;
-    padding: 10px;
+    padding: 15px;
     margin-right: auto;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h1{
@@ -42,7 +45,7 @@ h1{
     justify-content: flex-end;
 }
 
-nav ul a{
+.navBar a{
     text-decoration: none;
     color: black;
     font-family: 'Josefin Sans', sans-serif;
@@ -51,10 +54,38 @@ nav ul a{
     padding: 15px;
 }
 
-nav ul a:hover{
+.navBar a:hover{
     background-color: black;
     color: aqua;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .navBar{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1%;
+    }
+    
+    .navBar li{
+        padding: 1%;
+    }
+    
+    nav{
+        display: block;
+    }
+    nav h1{
+        width: 100%;
+        text-align: center;
+        padding: 1%;
+    }
+    nav ul{
+        margin: 0%;
+    }
+
+    header{
+        position: static;
+    }
 }
 
 main{
@@ -62,8 +93,65 @@ main{
     font-weight: bold;
 }
 
+#carouselAutoplaying{
+    padding: 10px 0px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 700px;
+}
+
 main h1{
     padding: 10px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+main section h1{
+    margin: 0%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenedorPartidos{
+   display: flex;
+   flex-direction: row;
+   padding: 10px;
+}
+
+.contenedorPartidos div{
+    display: flex;
+    padding: 0;
+}
+
+.contenedorPartidos div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedorPartidos div div h2{
+    min-width: 70px;
+    text-align: center;
+    margin: 0%;
+}
+
+.contenedorPartidos div img{
+    width: 40%;
+}
+
+@media screen and (min-width: 768px){
+    .contenedorPartidos div img{
+        width: 50%;
+    }
+}
+
+.partido{
+    border: rgb(109, 187, 197) 5px double;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 fieldset{
@@ -101,6 +189,12 @@ footer{
 footer h2{
     font-size: 40px;
     margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer ul{
+    padding: 0%;
+    margin: 0%;
 }
 
 footer li{
