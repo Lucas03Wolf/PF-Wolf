@@ -25,40 +25,35 @@
     <main>
         <fieldset>
             <form action="" class="inscripcion">
+                <h3>Formulario de inscripción</h3>
                 <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" required>
+                    <input class="controls " type="text" name="nombre" placeholder="Ingresá tu nombre" required>
                 </div>
                 <br>
                 <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" required>
+                    <input class="controls" type="text" name="apellido" placeholder="Ingresá tu apellido" required>
                 </div>
                 <br>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
+                    <input class="controls" type="email" name="email" placeholder="Ingresá tu email" required>
                 </div>
                 <br>
                 <div>
-                    <label for="telefono">Telefono</label>
-                    <input type="text" name="telefono" required>        
+                    <input class="controls" type="text" name="telefono" placeholder="Ingresá tu telefono" required>        
                 </div>
                 <br>
                 <div>
-                    <label for="nombreEquipo">Nombre de tu equipo</label>
-                    <input type="text" name="nombreEquipo" required>
+                    <input class="controls" type="text" name="nombreEquipo" placeholder="Ingresá el nombre de tu equipo" required>
                 </div>
                 <br>
                 <div>
                     <label for="listaEquipo">Lista de tu equipo</label>
-                    <br>
-                    <input type="file" name="listaEquipo" required>
+                    <input class="controls" type="file" name="listaEquipo" required>
                 </div>
                 <br>
                 <div>
                     <label for="categoria">Categoria</label>
-                    <select name="categoria">
+                    <select class="categories" name="categoria">
                         <option value="sub18">Sub 18</option>
                         <option value="cat_lib">Categoria Libres</option>
                         <option value="mas30">+30</option>
@@ -66,7 +61,7 @@
                 </div>
                 <br>
                 <div>
-                    <input type="submit" value="Enviar formulario">
+                    <input class="formButton" type="submit" value="Enviar formulario">
                 </div>
             </form>
         </fieldset>
