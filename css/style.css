@@ -168,6 +168,17 @@ fieldset {
   border: black 2px solid;
   margin: 5px; }
 
+.clubCards {
+  margin: 30px 0px; }
+
+.card {
+  text-align: center; }
+
+.card-body {
+  padding: 10px 30px 30px 30px; }
+  .card-body img {
+    width: 2rem; }
+
 footer {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
@@ -186,6 +197,9 @@ footer {
     font-size: 20px;
     list-style-type: none;
     padding: 5px; }
+  footer a {
+    text-decoration: none;
+    color: black; }
 
 .imgRedes {
   height: 25px;

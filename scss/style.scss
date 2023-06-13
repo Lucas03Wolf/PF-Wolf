@@ -196,6 +196,18 @@ fieldset {
 	border: black 2px solid;
 	margin: 5px;
 }
+.clubCards{
+	margin: 30px 0px;
+}
+.card{
+	text-align: center;
+}
+.card-body{
+	padding: 10px 30px 30px 30px;
+	img{
+		width: 2rem;
+	}
+}
 footer {
 	font-family: $font-family_2;
 	font-weight: bold;
@@ -216,6 +228,10 @@ footer {
 		font-size: 20px;
 		list-style-type: none;
 		padding: 5px;
+	}
+	a{
+		text-decoration: none;
+		color: $color_2;
 	}
 }
 .imgRedes {
