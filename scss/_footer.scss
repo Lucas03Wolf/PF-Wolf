@@ -1,0 +1,31 @@
+footer {
+	font-family: $font-family_2;
+	font-weight: bold;
+	padding: 20px;
+	background: linear-gradient(#F7B633, #4E1D1D);
+	color: $color_2;
+	h2 {
+		font-size: 40px;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+	ul {
+		padding: 0%;
+		padding-bottom: 1%;
+		margin: 0%;
+	}
+	li {
+		font-size: 20px;
+		list-style-type: none;
+		padding: 5px;
+	}
+	a{
+		text-decoration: none;
+		color: $color_2;
+	}
+}
+.imgRedes {
+	height: 25px;
+	width: 25px;
+	padding: 3px;
+}

@@ -1,11 +1,7 @@
-$color_1: white;
-$color_2: black;
-$color_3: #ff9900;
-$font-family_1: "Poppins", sans-serif;
-$font-family_2: "Josefin Sans", sans-serif;
-$background-color_1: #ff9900;
-$background-color_2: black;
-$background-color_3: orange;
+@import "var";
+@import "header";
+@import "main";
+@import "footer";
 
 * {
 	margin: 0;
@@ -18,236 +14,7 @@ body {
 	background-repeat: no-repeat;
 	color: $color_1;
 }
-header {
-	position: sticky;
-	top: 5px;
-	z-index: 1;
-}
-nav {
-	width: 100%;
-	background-color: $background-color_1;
-	margin: 3px auto;
-	display: flex;
-	h1 {
-		width: 15%;
-		padding: 15px;
-		margin-right: auto;
-		margin-bottom: 0%;
-		font-size: 2rem;
-		font-weight: bold;
-	}
-}
-.title {
-	text-decoration: none;
-	color: $color_2;
-}
-h1 {
-	font-family: $font-family_1;
-}
-.navBar {
-	list-style-type: none;
-	display: flex;
-	align-items: center;
-	width: 25%;
-	padding: 20px;
-	justify-content: space-around;
-	justify-content: flex-end;
-	a {
-		text-decoration: none;
-		color: $color_2;
-		font-family: $font-family_2;
-		font-size: 200x;
-		font-weight: bold;
-		padding: 15px;
-		&:hover {
-			background-color: $background-color_2;
-			color: $color_3;
-			border-radius: 10px;
-		}
-	}
-}
-main {
-	font-family: $font-family_2;
-	font-weight: bold;
-	h1 {
-		padding: 10px;
-		font-weight: 600;
-		font-size: 2rem;
-	}
-	section {
-		h2 {
-			margin: 0%;
-			text-align: center;
-			font-size: 2.5rem;
-      font-weight: bold;
-		}
-	}
-}
-#carouselAutoplaying {
-	padding: 10px 0px;
-}
-.carousel-inner {
-	img {
-		width: 100%;
-		max-height: 700px;
-	}
-}
-.contenedorPartidos {
-	display: flex;
-	flex-direction: row;
-	padding: 10px;
-	div {
-		display: flex;
-		padding: 0;
-		div {
-			display: flex;
-			justify-content: space-evenly;
-			align-items: center;
-			h3 {
-				min-width: 70px;
-				text-align: center;
-				margin: 0%;
-        font-size: 2rem;
-			}
-		}
-		img {
-			width: 40%;
-		}
-	}
-}
-.partido {
-	border: #ff9900 5px double;
-	margin: 5px;
-	display: flex;
-	justify-content: center;
-}
-.cabezaTabla {
-	background-color: $background-color_3;
-}
-.columnaTabla {
-	color: $color_1;
-}
-.table {
-	th {
-		color: $color_1;
-	}
-}
-fieldset {
-	margin: 40px;
-  h3{
-    margin-bottom: 15px;
-  }
-  div{
-    width: 30%;
-    label{
-      display: flex;
-	    flex-direction: column;
-	    align-items: center;
-      margin-bottom: 2%;
-    }
-  }
-}
-.inscripcion {
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.controls{
-  width: 100%;
-  height: 32px;
-  background-color: rgba($color: #000000, $alpha: 0);
-  border-radius: 4px;
-  border: 1px solid $color_3;
-  font-size: 1rem;
-  color: $color_1;
-  text-align: center;
-}
-.categories{
-  width: 100%;
-  height: 32px;
-  background-color: rgba($color: #000000, $alpha: 0);
-  border-radius: 4px;
-  border: 1px solid $color_3;
-  font-size: 1rem;
-  color: $color_1;
-  text-align: center;
-    option{
-      background-color: #242323;
-    }
-}
-.formButton{
-  width: 100%;
-  height: 35px;
-  background: linear-gradient(#F7B633, #4E1D1D);;
-  border: none;
-  border-radius: 4px;
-  color: $color_1;
-}
-.multimediaImg {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: 20px;
-}
-.img {
-	height: 300px;
-	width: 300px;
-	border: black 2px solid;
-	margin: 5px;
-}
-.clubCards{
-	margin: 30px 0px;
-}
-.card{
-	text-align: center;
-}
-.card-img-top{
-	overflow: hidden;
-	img{
-		&:hover{
-			transform:scale(1.2);
-		}
-	}
-}
-.card-body{
-	padding: 10px 30px 30px 30px;
-	img{
-		width: 2rem;
-	}
-}
-footer {
-	font-family: $font-family_2;
-	font-weight: bold;
-	padding: 20px;
-	background: linear-gradient(#F7B633, #4E1D1D);
-	color: $color_2;
-	h2 {
-		font-size: 40px;
-		margin-bottom: 10px;
-		font-weight: bold;
-	}
-	ul {
-		padding: 0%;
-		padding-bottom: 1%;
-		margin: 0%;
-	}
-	li {
-		font-size: 20px;
-		list-style-type: none;
-		padding: 5px;
-	}
-	a{
-		text-decoration: none;
-		color: $color_2;
-	}
-}
-.imgRedes {
-	height: 25px;
-	width: 25px;
-	padding: 3px;
-}
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.navBar {
 		flex-direction: column;
 		width: 100%;
@@ -270,11 +37,14 @@ footer {
 	header {
 		position: static;
 	}
-  fieldset {
-    div{
-      width: 80%;
-      }
+    fieldset {
+		div{
+			width: 80%;
+		}
     }
+	.card-text{
+		min-height: 50px;
+	}
   }
 @media screen and (min-width: 768px) {
 	.contenedorPartidos {
